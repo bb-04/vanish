@@ -7,6 +7,15 @@
 //
 
 import Foundation
+import ShellOut
 
+let arguments = CommandLine.arguments
+
+try ShellOut(to: "mv", arguments: [arguments])
+
+print(arguments)
 print("Hello, World!")
+
+let output = try shellOut(to: "echo", arguments: ["sdfsdgg"])
+print(output) // Hello world
 
