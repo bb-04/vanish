@@ -9,13 +9,13 @@
 import Foundation
 import ShellOut
 
-let arguments = CommandLine.arguments
+let arguments = CommandLine.arguments[1]
+let result = "\(".")\(arguments)"
 
-try ShellOut(to: "mv", arguments: [arguments])
+print("file: '\(arguments)' has been succsessfully hidden")
 
-print(arguments)
-print("Hello, World!")
+try shellOut(to: .moveFile(from: arguments, to: result))
 
-let output = try shellOut(to: "echo", arguments: ["sdfsdgg"])
-print(output) // Hello world
+//let output = try shellOut(to: "echo", arguments: ["sdfsdgg"])
+//print(output) // Hello world
 
