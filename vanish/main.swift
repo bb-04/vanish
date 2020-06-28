@@ -16,6 +16,7 @@ print("file: '\(arguments)' has been succsessfully hidden")
 
 try shellOut(to: .moveFile(from: arguments, to: result))
 
-//let output = try shellOut(to: "echo", arguments: ["sdfsdgg"])
-//print(output) // Hello world
-
+//  ^..^      /
+//  /_/\_____/
+//     /\   /\
+//    /  \ /  \
