@@ -4,10 +4,10 @@ Simple command line tool to hide/unhide files, folders, and apps.
 
 ## Usage
 
-Obviously replace `your_file.png` with whatever file, app or folder you would like to hide.
+If you don't want to install this binary, you can navigate to the directory where it's stored and run the following command. Obviously replace `your_file.png` with whatever file, app, or folder you would like to hide.
 
 ```bash
-vanish your_file.png
+./vanish your_file.png
 ```
 
 ## Contributing
